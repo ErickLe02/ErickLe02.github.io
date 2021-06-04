@@ -31,7 +31,58 @@ body {
     height:70px;
     background-color:#E6E6E9;
 }
+.bg {
+    width:100%;
+    height:430px;
+    background-color: #E6E6E9;
+}
+h1 {
+    font-size:30px;
+    line-height:45px;
+    font-weight:normal;
+    width:640px;
+    margin: 0 auto;
+    color:#333333;
+    font-family: "HelveticaNeue-Medium", "Cabin", sans-serif;
+}
+#small {
+    font-size:18px;
+    font-family: "Helvetica Neue", "Cabin", sans-serif;
+}
+.img1 {
+    padding-left:10px;
+    padding-top:10px;
+}
+.img2 {
+    padding-left:5px;
+}
+a {
+    text-decoration:none;
 
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+a.title {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+h2 {
+    font-size:17px;
+    font-weight:300;
+    margin-top:12px;
+    padding-left:30px;
+    padding-right:30px;
+    text-align:center;
+}
+.bold {
+    font-weight:bold;
+}
+.broken {
+    margin-top:-18px;
+    padding-top:0;
+}
 .iconlist {
     padding-left:35px;
     background-position: 15px 50%;
@@ -79,7 +130,44 @@ body {
     padding: 0 22px;
     display: inline-block;
 }
-
+#numpadblock {
+    height:400px;
+    width:210px;
+    margin: 5px auto 0;
+    display: inline-block;
+    position: relative;
+    padding: 0 22px;
+}
+.numpadfiller {
+    width:210px;
+    height:90px;
+    display: inline-block;
+}
+.hidenumpad {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hidenumpad:hover {
+    background-color: #C5C5C5;
+    border-color:white;
+    border-bottom: 1px solid #D8D8DE;
+    border-right: 1px solid #D8D8DE;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hidenumpad:active {
+    background: linear-gradient(to bottom right,#8FD700, #17D700);
+    opacity: 1;
+    color: #fff;
+    border-color:white;
+    border-bottom: 1px solid #D8D8DE;
+    border-right: 1px solid #D8D8DE;
+    }
 .key {
     border-bottom: 1px solid #D8D8DE;
     border-right: 1px solid #D8D8DE;
@@ -233,7 +321,9 @@ body {
 .test {
     color:#000000;
 }
-
+.infotext {
+    display:inline;
+}
 .keycounter {
     border-bottom: 1px solid #D8D8DE;
     border-right: 1px solid #D8D8DE; 
@@ -246,7 +336,10 @@ body {
     padding-right:5px;
     white-space: nowrap;
 }
-
+.footer {
+    width:100%;
+    border-top:1px solid #D8D8DE;
+}
 .green {
     border-bottom: 1px solid #D8D8DE;
     border-right: 1px solid #D8D8DE; 
@@ -260,8 +353,45 @@ body {
     padding-right:5px;
     white-space: nowrap;
 }
-
-
+.cardscontainer {
+    width:100%;
+    /* border-top:1px solid #D8D8DE; */
+    background-color:#f1f1f1;
+    padding-top:20px;
+    max-width:1300px;
+    margin:0 auto;
+    padding-left:5px;
+    padding-right:5px;
+    box-sizing: border-box;
+}
+.cards {
+    width:99%;
+    margin-left:0.5%;
+    display: flex; 
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:10px;
+}
+#card {
+    box-sizing: border-box;
+    width:31%;
+    overflow: auto;
+    background-color: #ffffff;
+    margin-left:10px;
+    margin-right:10px;
+    border-bottom:1px solid #D8D8DE;
+    border-right: 1px solid #D8D8DE;
+    margin-bottom:40px;
+    padding:12px;
+    border-radius: 3px;
+    padding-bottom:25px;
+}
+#card.split {
+    width:47.7%;
+}
+#card.fullwidth {
+    width:100%;
+}
 #container {
 	margin: 0px auto;
 	width: 500px;
