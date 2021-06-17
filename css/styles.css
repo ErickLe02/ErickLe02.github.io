@@ -6,17 +6,22 @@ body {
    font-weight:300;
    background-color:#000000;
 }
-
+#balls{
+    width: 4em;
+    height: 2em;
+    display: inline;
+}
 .container {
     margin: 0 auto;
-    width:1150px;
-    padding-top:30px;
+    width:5000px;
+    padding-top:5px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    display: inline;
 }
 .keyboard {
     height: 400px;
@@ -167,24 +172,26 @@ body {
     background-color: #868686;
     color: white;
 }
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
+#test{
+    display: inline;
 }
 #videoElement {
-	width: 500px;
+	width: 400px;
 	height: 375px;
 	background-color: #666;
+    display: inline;
 }
 /* Small screens */
-@media all and (max-width: 1050px) {
-    #card {
-    width:47%;
-  }
+@media screen and (max-width: 1050px) {
+    .container{
+        width: 75%;
+        height: 75%;
+    }
+    
 }
-@media all and (max-width: 700px) {
-    #card {
-    width:99%;
-  }
+@media screen and (max-width: 700px) {
+    .container{
+        width: 75%;
+        height: 75%;
+    }
 }
