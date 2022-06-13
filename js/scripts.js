@@ -1,4 +1,6 @@
 var video = document.querySelector("#videoElement");
+var au = document.getElementById("balls");
+au.volume = 0.5; 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(function (stream) {
